@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nice Dev</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/logo/favicon-32x32.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <div class="page">
+    <header class="header">
+      <span class="header__section_white"></span>
+      <span class="header__section_yellow"></span>
+
+      <nav class="navbar navbar-expand-lg p-0 header__nav">
+        <a class="navbar-brand p-0 header__logo" href="#">
+          <img src="./img/logo/logo.png" alt="логотип" width="130" height="50">
+        </a>
+        <ul class="navbar-nav me-auto mb-lg-0 navbar-nav-scroll header__menu">
+          <li class="nav-item menu__item">
+            <a class="nav-link active header__menu-text" aria-current="page" href="#about">о нас</a>
+          </li>
+          <li class="nav-item menu__item">
+            <a class="nav-link active header__menu-text" aria-current="page" href="#services">услуги</a>
+          </li>
+          <li class="nav-item menu__item">
+            <a class="nav-link active header__menu-text" aria-current="page" href="#price">цены</a>
+          </li>
+          <li class="nav-item menu__item">
+            <a class="nav-link active header__menu-text" aria-current="page" href="#portfolio">портфолио</a>
+          </li>
+          <!-- <li class="nav-item">
+                <a class="nav-link active header__menu-text" aria-current="page" href="#">отзывы</a>
+              </li> -->
+        </ul>
+        <ul class="contacts__list">
+          <li class="contacts__item">
+            <a href="https://telegram.im/@ivan_niceman" class="contacts__link" target="_blank"></a>
+          </li>
+          <li class="contacts__item">
+            <a href="https://wa.me/+79067075235" class="contacts__link" target="_blank"></a>
+          </li>
+          <li class="contacts__item">
+            <a href="mailto:nice-dev@list.ru" class="contacts__link" target="_blank"></a>
+          </li>
+        </ul>
+      </nav>
+
+      <nav class="navbar mobile__nav">
+        <a class="navbar-brand p-0 header__logo" href="#">
+          <img src="./img/logo/logo.png" alt="логотип" width="130" height="50">
+        </a>
+        <div class="container-fluid burger__menu">
+          <button class="navbar-toggler menu__burger_button" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar">
+            <span class="burger"></span>
+          </button>
+          <div class="offcanvas offcanvas-end mobile__menu" tabindex="-1" id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Закрыть"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav flex-grow-1 mobile__list">
+                <li class="nav-item mobile__item">
+                  <a class="nav-link mobile__link" aria-current="page" href="#about">о нас</a>
+                </li>
+                <li class="nav-item mobile__item">
+                  <a class="nav-link mobile__link" href="#services">услуги</a>
+                </li>
+                <li class="nav-item mobile__item">
+                  <a class="nav-link mobile__link" href="#price">цены</a>
+                </li>
+                <li class="nav-item mobile__item">
+                  <a class="nav-link mobile__link" href="#portfolio">портфолио</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+
+      <section class="header__titles">
+        <h1 class="header__title-left">СОБИРАЕМ И ЗАПУСКАЕМ<span class="header__title-left-color"> ПРОДАЮЩИЕ</span>
+          САЙТЫ турфирм</h1>
+        <h2 class="header__title-right">создаем <span class="header__title-right-color">успешный</span> и узнаваемый
+          бренд</h2>
+      </section>
+
+      <section class="header__bottom">
+        <span class="header__image"></span>
+        <section class="header__section-form">
+          <div class="contacts__massage">
+          <img src="img/good.svg" alt="Сообщение" />
+          <h4 class="contacts__info">Ваша заявка принята!</h4>
+        </div>
+          <h2 class="header__form-title">бесплатная консультация</h2>
+          <form id="send-form-header" class="header__form">
+            <input type="text" name="name" class="form-contacts" placeholder="Имя" required>
+            <textarea name="message" class="send-text" placeholder="Чем занимается ваша компания?" required></textarea>
+            <button type="submit" class="form-btn"><p>Дальше</p> &#8594;</button>
+          </form>
+        </section>
+      </section>
+
+    </header>
+    <main class="main">
+      <section class="line"></section>
+      <section class="about" id="about">
+        <h2 class="main__title">кто мы?</h2>
+        <section class="about__us">
+          <section class="about__left">
+            <p class="about__left-paragraph">Nicedev - креативная веб-студия, специалисты которой имеют опыт не только в
+              дизайне и архитектуре сайтов, но и в туриндустрии. Именно поэтому мы решили посвятить себя созданию
+              it-продуктов для работников сферы туризма.</p>
+            <p class="about__left-paragraph">Мы отлично знаем потребности туристов, их мотивации и возражения, что
+              позволяет нам сконструировать наиболее точный путь пользователя и создать на основании него сайт,
+              соответствующий всем современным тенденциям.</p>
+            <p class="about__left-paragraph">Если хотите получить по-настоящему продающий сайт, который будет давать
+              конверсию при должной рекламе - то обращайтесь к нам!</p>
+            <p class="about__left-paragraph">Помимо этого, наш графический дизайнер создаст для вас запоминающийся и
+              красивый фирменный стиль, который выделит вас из массы конкурентов.</p>
+          </section>
+          <section class="about__right">
+            <div id="carouselExampleControls" class="carousel slide carousel-fade about__carousel" data-bs-ride="carousel"
+              data-bs-touch="false">
+              <ul class="carousel-inner about__right-carousel">
+                <li class="carousel-item active" data-bs-interval="7000">
+                  <div class="card about__card">
+                    <img src="./img/partners/partner1.jpg" class="card-img-top card__size" alt="дизайнер Наталья">
+                    <div class="card-body card__body-size">
+                      <h2 class="about__card-profession">Web-дизайнер</h2>
+                      <h3 class="about__card-name">Наталья</h3>
+                      <p class="about__card-text">Имею большой опыт работы не только в создании визуала, но также в
+                        маркетинге и туризме. Поэтому точно знаю как сделать так, чтобы турагенты и туристы были
+                        довольны</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="carousel-item" data-bs-interval="7000">
+                  <div class="card about__card">
+                    <img src="./img/partners/partner2.jpg" class="card-img-top card__size"
+                      alt="проект менеджер Наталья">
+                    <div class="card-body card__body-size">
+                      <h2 class="about__card-profession">Project-manager</h2>
+                      <h3 class="about__card-name">Наталья</h3>
+                      <p class="about__card-text">Живу туризмом уже больше 12 лет. Помогу вам сделать лучший выбор из
+                        нашего спектра услуг и дам много полезных советов :)</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="carousel-item" data-bs-interval="7000">
+                  <div class="card about__card">
+                    <img src="./img/partners/partner3.jpg" class="card-img-top card__size"
+                      alt="графический дизайнер Сергей">
+                    <div class="card-body card__body-size">
+                      <h2 class="about__card-profession">Графический дизайнер</h2>
+                      <h3 class="about__card-name">Сергей</h3>
+                      <p class="about__card-text">Разработаю фирменный стиль вашей компании в рамках ваших предпочтений
+                        цветов и форм</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="carousel-item" data-bs-interval="7000">
+                  <div class="card about__card">
+                    <img src="./img/partners/partner4.jpg" class="card-img-top card__size" alt="разработчик Иван">
+                    <div class="card-body card__body-size">
+                      <h2 class="about__card-profession">Front-end developer</h2>
+                      <h3 class="about__card-name">Иван</h3>
+                      <p class="about__card-text">Качественно и внимательно напишу ваш сайт с учётом всех новинок мира
+                        web-разработки</p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <button class="carousel-control-prev carousel-button carousel-button-left" type="button"
+                data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="material-symbols-outlined arrow__left">arrow_right_alt</span>
+              </button>
+              <button class="carousel-control-next carousel-button carousel-button-right" type="button"
+                data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="material-symbols-outlined arrow__right">arrow_right_alt</span>
+              </button>
+            </div>
+          </section>
+        </section>
+      </section>
+      <section class="about__our-work">
+        <h2 class="main__title">как мы работаем?</h2>
+        <ul class="about__specialty">
+          <li class="about__item">
+            <h2 class="about__speciality-title">исследование</h2>
+            <p class="about__speciality-paragraph">Перед тем, как приступить к созданию вашего сайта или фирменного
+              стиля, мы проводим глубокий анализ рынка и ваших конкурентов, чтобы сделать ваш бизнес еще более успешным
+            </p>
+          </li>
+          <li class="about__item">
+            <h2 class="about__speciality-title">проектирование</h2>
+            <p class="about__speciality-paragraph">Мы проводим несколько этапов проектирования, учитывая поведение
+              пользователей, их потребности и современные требования</p>
+          </li>
+          <li class="about__item">
+            <h2 class="about__speciality-title">дизайн</h2>
+            <p class="about__speciality-paragraph">В дизайне мы учитываем современные концепции, функциональность и вашу
+              эстетику. Все этапы согласовываем с клиентом</p>
+          </li>
+          <li class="about__item">
+            <h2 class="about__speciality-title">разработка</h2>
+            <p class="about__speciality-paragraph">После согласования проекта и дизайна, мы переходим к разработке
+              вашего сайта, чтобы добиться идеальной функциональности на пути пользователя</p>
+          </li>
+        </ul>
+        <div id="carouselExampleControls1" class="carousel slide about__specialty-carousel" data-bs-ride="false"
+          data-bs-touch="false" data-bs-interval="10000">
+          <ul class="carousel-inner about__specialty-carousel-inner">
+            <li class="carousel-item active">
+              <div class="about__specialty-card">
+                <h2 class="about__speciality-title">исследование</h2>
+                <p class="about__speciality-paragraph">Перед тем, как приступить к созданию вашего сайта или фирменного
+                  стиля, мы проводим глубокий анализ рынка и ваших конкурентов, чтобы сделать ваш бизнес еще более
+                  успешным.</p>
+              </div>
+            </li>
+            <li class="carousel-item">
+              <div class="about__specialty-card">
+                <h2 class="about__speciality-title">проектирование</h2>
+                <p class="about__speciality-paragraph">Мы проводим несколько этапов проектирования, учитывая поведение
+                  пользователей, их потребности и современные требования.</p>
+              </div>
+            </li>
+            <li class="carousel-item">
+              <div class="about__specialty-card">
+                <h2 class="about__speciality-title">дизайн</h2>
+                <p class="about__speciality-paragraph">В дизайне мы учитываем современные концепции, функциональность и
+                  вашу эстетику. Все этапы согласовываем с клиентом.</p>
+              </div>
+            </li>
+            <li class="carousel-item">
+              <div class="about__specialty-card">
+                <h2 class="about__speciality-title">разработка</h2>
+                <p class="about__speciality-paragraph">После согласования проекта и дизайна, мы переходим к разработке
+                  вашего сайта, чтобы добиться идеальной функциональности на пути пользователя.</p>
+              </div>
+            </li>
+          </ul>
+          <button class="carousel-control-prev carousel-button carousel-button-left" type="button"
+            data-bs-target="#carouselExampleControls1" data-bs-slide="prev">
+            <span class="material-symbols-outlined arrow__left">arrow_right_alt</span>
+          </button>
+          <button class="carousel-control-next carousel-button carousel-button-right" type="button"
+            data-bs-target="#carouselExampleControls1" data-bs-slide="next">
+            <span class="material-symbols-outlined arrow__right">arrow_right_alt</span>
+          </button>
+        </div>
+      </section>
+      <section class="our__services" id="services">
+        <h2 class="main__title">наши услуги</h2>
+        <ul class="services__list">
+          <li class="services__item">
+            <h3 class="services__subtitle">разработка сайтов</h3>
+            <h3 class="services__subtitle">любой сложности</h3>
+          </li>
+          <li class="services__item">
+            <h3 class="services__subtitle">доработка</h3>
+            <h3 class="services__subtitle">и обслуживание</h3>
+            <h3 class="services__subtitle">существующийх сайтов</h3>
+          </li>
+          <li class="services__item">
+            <h3 class="services__subtitle">разработка логотипа</h3>
+            <h3 class="services__subtitle">фирменного стиля</h3>
+          </li>
+        </ul>
+      </section>
+      <section class="our__price" id="price">
+        <h2 class="main__title">сколько стоит?</h2>
+        <ul class="price__list">
+          <li class="price__item">
+            <p class="price__works">фирменный стиль, логотип</p>
+            <span class="price__block">
+              <p class="price__coast">1-5к</p>
+              <p class="price__wirking-time">до 1 месяца</p>
+            </span>
+            <p class="price__about-works">Индивидуальная разработка вашего фирменного стиля, логотипа и торгового знака.
+              Сделаем ваш бизнес запоминающимся и современным. Подготовим все необходимые гайдлайны для регистрации
+              торговой марки.</p>
+          </li>
+          <li class="price__item">
+            <p class="price__works">индивидуальный дизайн сайта</p>
+            <span class="price__block">
+              <p class="price__coast">4-15к</p>
+              <p class="price__wirking-time">до 2 месяцев</p>
+            </span>
+            <p class="price__about-works">Наш дизайнер создаст для вас современный и продающий визуал сайта, либо
+              переработает дизайн старого сайта. Дизайнер хорошо разбирается в интернет-маркетинге, поэтому создаст
+              максимально коммерческий дизайн, согласовывая с вашими пожеланиями и эстетикой.</p>
+          </li>
+          <li class="price__item">
+            <p class="price__works">обслуживание сайта</p>
+            <span class="price__block">
+              <p class="price__coast">от 3к</p>
+              <p class="price__wirking-time">срок не определен</p>
+            </span>
+            <p class="price__about-works">Мы можем обслуживать ваш действующий сайт или созданный нами, исправлять
+              ошибки или добавлять функционал. Стоимость каждой задачи индивидуальна.</p>
+          </li>
+          <li class="price__item">
+            <p class="price__works">посадочная страница</p>
+            <span class="price__block">
+              <p class="price__coast">8-15к</p>
+              <p class="price__wirking-time">до 1 месяца</p>
+            </span>
+            <p class="price__about-works">Продаете конкретный товар или услугу? Тогда лучшим решением для вашего бизнеса
+              будет - посадочная страница. Отличный способ продавать и рекламироваться, всегда дает хорошую конверсию.
+            </p>
+          </li>
+          <li class="price__item">
+            <p class="price__works">многостраничный сайт</p>
+            <span class="price__block">
+              <p class="price__coast">15-45к</p>
+              <p class="price__wirking-time">до 6 месяцев</p>
+            </span>
+            <p class="price__about-works">Если ваш бизнес предполагает продажу широкого спектра товаров или услуг, то
+              вам необходим многостраничный сайт. Мы разрабатываем такие сайты, анализируя оптимальный путь
+              пользователя, простоту навигации и мотивацию к покупке.</p>
+          </li>
+        </ul>
+      </section>
+      <section class="portfolio" id="portfolio">
+        <h2 class="main__title">примеры работ</h2>
+        <section class="work__portfolio">
+          <div id="carouselExampleControls2" class="carousel slide carousel-fade portfolio__carousel"
+            data-bs-ride="false" data-bs-touch="false" data-bs-interval="10000">
+            <ul class="carousel-inner portfolio__list">
+              <li class="carousel-item active portfolio__item">
+                <div class="card portfolio__card">
+                  <p class="portfolio__paragraph">Создание сайта туристического агентства Солнечный тур.<br>
+                    <br>
+                    Цель: сделать современный сайт, который будет давать высокую конверсию при рекламе в интернете.
+                  </p><br>
+                  <img src="./img/portfolio/soltour.png" class="card-img-top portfolio__image" alt="">
+                  <p class="portfolio__paragraph">Заказчица получила сайт, который соответствует всем современным
+                    тенденциям, понятен пользователю и выделяет ее фирму на фоне конкурентов.</p>
+                </div>
+              </li>
+              <li class="carousel-item portfolio__item">
+                <div class="card portfolio__card">
+                  <p class="portfolio__paragraph">Редизайн логотипа для туристического агентства “Солнечный тур”.<br>
+                    <br>
+                    Задача: создать логотип, который бы ассоциировался с радостью и отдыхом.
+                  </p><br>
+                  <img src="./img/portfolio/logos2.png" class="card-img-top portfolio__image" alt="">
+                  <p class="portfolio__paragraph">Реализована задумка с солнцем и морем на логотипе. Логотип отражает
+                    название и ассоциируется с отдыхом.</p>
+                </div>
+              </li>
+              <li class="carousel-item portfolio__item">
+                <div class="card portfolio__card">
+                  <p class="portfolio__paragraph">Редизайн сайта по доставке готовых обедов в офисы, на стройплощадки и
+                    выездные мероприятия.<br>
+                    <br>
+                    Цель: современный дизайн и понятная навигация.
+                  </p><br>
+                  <img src="./img/portfolio/delivery.png" class="card-img-top portfolio__image" alt="">
+                  <p class="portfolio__paragraph">Заказчик по итогу получил современный сайт, который будет показывать
+                    уровень качества продукции и понятен всем клиентам заказчика.</p>
+                </div>
+              </li>
+              <li class="carousel-item portfolio__item">
+                <div class="card portfolio__card">
+                  <p class="portfolio__paragraph">Сайт туристического агентства Москва, работающего с 2000 года.<br>
+                    <br>
+                    Задача: реализовать современный дизайн и функционал.
+                  </p><br>
+                  <img src="./img/portfolio/marytour.png" class="card-img-top portfolio__image" alt="">
+                  <p class="portfolio__paragraph">Реализована система поиска туров с перелетами, поиск круизов и
+                    автобусных туров. Сайт сделан в современном дизайне с использованием анимации и интерактивных
+                    ссылок.
+                  </p>
+                </div>
+              </li>
+              <li class="carousel-item portfolio__item">
+                <div class="card portfolio__card">
+                  <p class="portfolio__paragraph">Сайт фирмы, которая продает мобильные аксессуары и компьютерную
+                    технику.<br>
+                    <br>
+                    Задача: создать ультра-современный сайт для целевой аудитории 18-30 лет.
+                  </p><br>
+                  <img src="./img/portfolio/shop.png" class="card-img-top portfolio__image" alt="">
+                  <p class="portfolio__paragraph">Сайт сделан с учетом маркетингового анализа, с понятным УТП, структура
+                    сайта ведет клиента по всей воронке продаж.</p>
+                </div>
+              </li>
+              <li class="carousel-item portfolio__item">
+                <div class="card portfolio__card">
+                  <p class="portfolio__paragraph">Сайт для нового туристического агентства, специализирующегося на
+                    продаже горящих туров.<br>
+                    <br>
+                    Задача: создать сайт, который поможет завоевать рынок.
+                  </p><br>
+                  <img src="./img/portfolio/hotel.png" class="card-img-top portfolio__image" alt="">
+                  <p class="portfolio__paragraph">Реализовано несколько форм обратной связи для удобства туристов. А
+                    также
+                    яркие графические решения для легкой навигации по сайту.</p>
+                </div>
+              </li>
+              <li class="carousel-item portfolio__item">
+                <div class="card portfolio__card">
+                  <p class="portfolio__paragraph">Сайт производственной компании, работающей с изделиями из стали.<br>
+                    <br>
+                    Цель: сделать продающий сайт, демонстрирующий весь ассортимент.
+                  </p><br>
+                  <img src="./img/portfolio/stali.png" class="card-img-top portfolio__image" alt="">
+                  <p class="portfolio__paragraph">Современный интерактивный фотоальбом позволяет увидеть большинство
+                    готовых изделий. Также на каждой странице реализован фирменный стиль компании.</p>
+                </div>
+              </li>
+              <li class="carousel-item portfolio__item">
+                <div class="card portfolio__card">
+                  <p class="portfolio__paragraph">Разработка логотипа для магазина, который занимается продажей
+                    продуктов
+                    из разных уголков мира.</p>
+                  <br>
+                  <img src="./img/portfolio/logos.png" class="card-img-top portfolio__image" alt="">
+                  <p class="portfolio__paragraph">Создано много вариантов логотипа, который ассоциируется одновременно с
+                    едой, планетой и путешествиями.</p>
+                </div>
+              </li>
+            </ul>
+            <button
+              class="carousel-control-prev carousel-button carousel-button-left portfolio__carousel-button portfolio__carousel-button-left"
+              type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="prev">
+              <span class="material-symbols-outlined arrow__left">arrow_right_alt</span>
+            </button>
+            <button
+              class="carousel-control-next carousel-button carousel-button-right portfolio__carousel-button portfolio__carousel-button-right"
+              type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="next">
+              <span class="material-symbols-outlined arrow__right">arrow_right_alt</span>
+            </button>
+          </div>
+        </section>
+      </section>
+      <section class="questions">
+        <h2 class="main__title">Часто задаваемые вопросы</h2>
+        <section class="section__questions">
+          <section class="question__section-left">
+            <span class="block__questions">
+              <ul class="accordion" id="accordionExample">
+                <li class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button accordion__button-image collapsed" type="button"
+                      data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                      aria-controls="collapseOne">
+                      Что входит в создание сайта?
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <p class="accordion-body">
+                      В создание сайта входит наш первичный маркетинговый анализ разработка структуры сайта, дизайн
+                      сайта и
+                      верстка сайта по дизайн-макету
+                    </p>
+                  </div>
+                </li>
+                <li class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button accordion__button-image collapsed" type="button"
+                      data-bs-toggle="collapse" data-bs-target="#collapseOne2" aria-expanded="true"
+                      aria-controls="collapseOne">
+                      Что, если мне не понравится дизайн?
+                    </button>
+                  </h2>
+                  <div id="collapseOne2" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <p class="accordion-body">
+                      Дизайн будет согласовываться с вами на всех этапах разработки
+                    </p>
+                  </div>
+                </li>
+                <li class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button accordion__button-image collapsed" type="button"
+                      data-bs-toggle="collapse" data-bs-target="#collapseOne3" aria-expanded="true"
+                      aria-controls="collapseOne">
+                      какие условия оплаты?
+                    </button>
+                  </h2>
+                  <div id="collapseOne3" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <p class="accordion-body">
+                      Предоплата 50% при заказе и остаток при завершении работ
+                    </p>
+                  </div>
+                </li>
+                <li class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button accordion__button-image collapsed" type="button"
+                      data-bs-toggle="collapse" data-bs-target="#collapseOne4" aria-expanded="true"
+                      aria-controls="collapseOne">
+                      чем отличается шаблонный сайт от продающего сайта?
+                    </button>
+                  </h2>
+                  <div id="collapseOne4" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <p class="accordion-body">
+                      Продающий сайт создается с учетом текущего состояния рынка и запросов потребителя, и в связи с
+                      этим
+                      имеет более высокую конверсию
+                    </p>
+                  </div>
+                </li>
+                <li class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button accordion__button-image collapsed" type="button"
+                      data-bs-toggle="collapse" data-bs-target="#collapseOne5" aria-expanded="true"
+                      aria-controls="collapseOne">
+                      какие будут у меня дополнительные расходы?
+                    </button>
+                  </h2>
+                  <div id="collapseOne5" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <p class="accordion-body">
+                      Вам понадобится оплатить домен и ежегодно оплачивать хостинг. Также, если вы захотите заказать
+                      продвижение сайта, то у вас будут затраты на рекламу
+                    </p>
+                  </div>
+                </li>
+                <li class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button accordion__button-image collapsed" type="button"
+                      data-bs-toggle="collapse" data-bs-target="#collapseOne6" aria-expanded="true"
+                      aria-controls="collapseOne">
+                      какие гарантии вы предоставляете?
+                    </button>
+                  </h2>
+                  <div id="collapseOne6" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <p class="accordion-body">
+                      Даем гарантию 3 месяца. В течение этого срока, если на сайте произойдут какие-то неполадки, мы их
+                      устраним совершенно бесплатно
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </span>
+          </section>
+          <section class="question__section-right">
+            <button type="button" class="question__button">Хотите<br>посотрудничать?</button>
+          </section>
+        </section>
+      </section>
+    </main>
+    <footer class="footer">
+      <a href="#" class="footer__logo"></a>
+      <ul class="footer__list-menu">
+        <li class="footer__item-menu">
+          <a class="nav-link footer__link-menu" href="#about">о нас</a>
+        </li>
+        <li class="footer__item-menu">
+          <a class="nav-link footer__link-menu" href="#services">услуги</a>
+        </li>
+        <li class="footer__item-menu">
+          <a class="nav-link footer__link-menu" href="#price">цены</a>
+        </li>
+        <li class="footer__item-menu">
+          <a class="nav-link footer__link-menu" href="#portfolio">портфолио</a>
+        </li>
+        <!-- <li class="footer__item-menu">
+          <a class="nav-link footer__link-menu">отзывы</a>
+        </li> -->
+      </ul>
+      <ul class="contacts__list">
+        <li class="contacts__item">
+          <a href="https://telegram.im/@ivan_niceman" class="contacts__link" target="_blank"></a>
+        </li>
+        <li class="contacts__item">
+          <a href="https://wa.me/+79067075235" class="contacts__link" target="_blank"></a>
+        </li>
+        <li class="contacts__item">
+          <a href="mailto:nice-dev@list.ru" class="contacts__link" target="_blank"></a>
+        </li>
+      </ul>
+        <a href="http://nice-dev.ru/" class="nice-dev" target="_blank">
+          © Nice Dev
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
+        </a>
+    </footer>
+
+    <!-- popup -->
+
+    <section class="popup">
+      <div class="contacts__massage">
+        <img src="./img/logo/good.svg" alt="Сообщение" />
+        <h4 class="contacts__info">Ваша заявка принята!</h4>
+      </div>
+      <div class="popup__container">
+        <button aria-label="закрыть" type="button" class="popup__button-close"></button>
+        <h2 class="popup__title">Оставьте заявку</h2>
+        <form action="#" name="newCard" class="popup__form" id="send-form">
+          <label class="popup__form-lable">
+            <input type="text" name="name" placeholder="Введите ваше имя" class="popup__input" id="name-image-input" required>
+            <!-- <span class="popup__input-error name-image-input-error"></span> -->
+          </label>
+          <label class="popup__form-lable">
+            <input type="email" name="email" placeholder="Введите электронную почту" class="popup__input" id="image-link-input" required>
+            <!-- <span class="popup__input-error"></span> -->
+          </label>
+          <label class="popup__form-lable">
+            <textarea name="message" placeholder="Какой у вас вопрос?" class="popup__input popup__textarea" required></textarea>
+            <!-- <span class="popup__input-error"></span> -->
+          </label>
+          <button type="submit" aria-label="отправить" class="popup__button popup__button-save popup__button-create">Отправить</button>
+        </form>
+      </div>
+    </section>
+  </div>
+
+  <!-- <a href="/" class="scrollup" title="scrollup" onclick="toTop(); return false;"><img src="./img/icons/upscroll.png" alt="upscroll"></a> -->
+
+  <!-- <span class="up__scroll"></span> -->
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+  <!-- <script src="./js//validate.js"></script> -->
+
+  <!-- <script src="./js/scroll.js"></script> -->
+  <!-- <script src="./js/send-mail.js"></script> -->
+  <script src="./js/script.js"></script>
+</body>
+
+</html>
