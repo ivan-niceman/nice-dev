@@ -1,15 +1,11 @@
-let toTop = function () {
-  if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
-    window.scrollBy(0, -50);
-    setTimeout(toTop, 10);
-  }
-};
+const scrollUpButton = document.getElementById("scrollUpButton");
 
-window.onscroll = function () {
-  let scrolled = window.pageYOffset || document.documentElement.scrollTop;
-  if (scrolled > 400) {
-    document.querySelector('.scrollup').style.display = 'block';
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
+    scrollUpButton.style.display = "block";
   } else {
-    document.querySelector('.scrollup').style.display = 'none';
+    scrollUpButton.style.display = "none";
   }
-};
+}

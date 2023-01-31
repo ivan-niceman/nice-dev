@@ -1,7 +1,7 @@
 const popUp = document.querySelector('.popup');
 const buttonQuestion = document.querySelector('.question__button');
-const popUpInputs = document.querySelectorAll('.popup__input');
-const popUpInputsError = document.querySelectorAll('.popup__input-error');
+const popUpInputs = popUp.querySelectorAll('.popup__input');
+const popUpInputsError = popUp.querySelectorAll('.popup__input-error');
 
 // функция открытия popup //
 
@@ -38,6 +38,9 @@ function closePopUp(popup) {
     if (evt.target.classList.contains('popup__button-close')) {
       closePopUp(popUp);
     }
+    if (evt.target.classList.contains('popup__button')) {
+      closePopUp(popUp);
+    }
   })
 
 // функция закрытия popup кнопкой esc //
@@ -52,4 +55,3 @@ function closePopUpKeyEsc(evt){
 buttonQuestion.addEventListener('click', () => {
   openPopUp(popUp);
 })
-

@@ -9,12 +9,8 @@ $headers .= "From: Заявка с сайта <nice-dev.ru>\r\n";
 
 
 $name = trim($_POST['name']);
-// $phone = trim($_POST['tel']);
 $email = trim($_POST['email']);
 $message = trim($_POST['message']);
-
-
-// $text = "Имя: $name <br/> Телефон: $phone <br/> E-mail: $email <br/> Сообщение: $message";
 
 $text = "Имя: $name <br/> E-mail: $email <br/> Сообщение: $message";
 
