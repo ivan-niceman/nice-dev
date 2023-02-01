@@ -55,3 +55,13 @@ function closePopUpKeyEsc(evt){
 buttonQuestion.addEventListener('click', () => {
   openPopUp(popUp);
 })
+
+document.querySelectorAll('.nav-link').forEach( link => {
+  link.addEventListener('click', function(event) {
+    event.preventDefault();
+    const transition = link.getAttribute('href');
+    const transitionElement = document.querySelector(transition);
+    transitionElement.scrollIntoView({ behavior: 'smooth' });
+  });
+});
+

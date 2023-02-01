@@ -448,7 +448,7 @@ a {
 }
 
 .header__image {
-  background: url(../img/photo.png) left no-repeat;
+  background: url(../img/photo.jpg) left no-repeat;
   background-size: cover;
   width: 100%;
   max-width: 987px;
@@ -542,6 +542,7 @@ a {
 .form-btn {
   display: flex;
   padding: 15px 20px;
+  margin: 0 10px 0 0;
   background: #760592;
   color: #fff;
   border-radius: 15px;
@@ -555,12 +556,12 @@ a {
   background: #333333;
 }
 
-.form-btn p {
+.form-btn span {
   margin: 0 10px 0 0;
   transition: .5s;
 }
 
-.form-btn:hover p {
+.form-btn:hover span {
   margin: 0 20px 0 0;
 }
 
@@ -577,13 +578,17 @@ a {
   margin: 5px 0 0;
 }
 
-.label p {
+.label span {
   color: #fff;
   margin: 0 0 0 10px;
   font-size: 14px;
 }
 
-.label__popup p {
+.label__popup {
+  align-items: center;
+}
+
+.label__popup span {
   color: #000;
 }
 
@@ -930,7 +935,7 @@ a {
   align-items: center;
   background: #f5f5f5;
   border-radius: 20px;
-  padding: 35px 0;
+  padding: 35px 20px;
 }
 
 @media(max-width: 1287px) {
@@ -1203,6 +1208,7 @@ a {
 .questions__paragraph {
   padding: 0;
 }
+
 .question__section-right {
   animation: scale 2s ease-in-out infinite alternate;
 }
@@ -1551,7 +1557,8 @@ a {
   display: none;
   align-items: center;
   border-radius: 15px;
-  background: linear-gradient(45deg, #760592, #FBB42C);;
+  background: linear-gradient(45deg, #760592, #FBB42C);
+  ;
   box-shadow: 0 0 20px #760592;
   height: 50vh;
   width: 50vw;
@@ -1601,4 +1608,22 @@ a {
 .scrollup:hover {
   background: rgba(251, 178, 44, 0.8);
   box-shadow: 0 0 10px 0 #760592;
+}
+
+.scrollup span {
+  width: 25px;
+  height: 3px;
+  background: #760592;
+  position: absolute;
+  top: 42%;
+}
+
+.scrollup span:first-child {
+  transform: rotate(-50deg);
+  left: 5px;
+}
+
+.scrollup span:last-child {
+  transform: rotate(50deg);
+  right: 5px;
 }
