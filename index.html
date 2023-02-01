@@ -105,33 +105,33 @@
         <section class="header__section-form">
           <h2 class="header__form-title">бесплатная консультация</h2>
           <form method="POST" id="form-header" class="header__form">
-            <input type="text" id="name" name="name" class="form-contacts" placeholder="Имя" required>
-            <textarea name="message" id="message" class="send-text" placeholder="Чем занимается ваша компания?" required></textarea>
-            <button type="submit" class="form-btn"><p>Дальше</p> &#8594;</button>
+            <input type="text" name="name" class="form-contacts" placeholder="Имя" required>
+            <input type="email" name="email" class="form-contacts" placeholder="Эл. почта" required>
+            <textarea name="message" id="message" class="send-text" placeholder="Ваши пожелания?" required></textarea>
+            <!-- <span class="header__button"> -->
+              <button type="submit" class="form-btn"><p>Дальше</p> &#8594;</button>
+              <label class="label">
+                <input type="checkbox" name="checkbox" required>
+                <p>Согласие на <a href="./privacy.html" class="privacy">обработку персональных данных</a></p>
+              </label>
+            <!-- </span> -->
           </form>
         </section>
       </section>
 
     </header>
     <main class="main">
-      <section class="line"></section>
       <section class="about" id="about">
         <h2 class="main__title">кто мы?</h2>
         <section class="about__us">
           <section class="about__left">
-            <p class="about__left-paragraph">Nicedev - креативная веб-студия, специалисты которой имеют опыт не только в
-              дизайне и архитектуре сайтов, но и в туриндустрии. Именно поэтому мы решили посвятить себя созданию
-              it-продуктов для работников сферы туризма.</p>
-            <p class="about__left-paragraph">Мы отлично знаем потребности туристов, их мотивации и возражения, что
-              позволяет нам сконструировать наиболее точный путь пользователя и создать на основании него сайт,
-              соответствующий всем современным тенденциям.</p>
-            <p class="about__left-paragraph">Если хотите получить по-настоящему продающий сайт, который будет давать
-              конверсию при должной рекламе - то обращайтесь к нам!</p>
-            <p class="about__left-paragraph">Помимо этого, наш графический дизайнер создаст для вас запоминающийся и
-              красивый фирменный стиль, который выделит вас из массы конкурентов.</p>
+            <p class="about__left-paragraph">Nicedev - креативная веб-студия, специалисты которой имеют опыт не только в дизайне и архитектуре сайтов, но и в туриндустрии. Именно поэтому мы решили посвятить себя созданию it-продуктов для работников сферы туризма.</p>
+            <p class="about__left-paragraph">Мы отлично знаем потребности туристов, их мотивации и возражения, что позволяет нам сконструировать наиболее точный путь пользователя и создать на основании него сайт, соответствующий всем современным тенденциям.</p>
+            <p class="about__left-paragraph">Если хотите получить по-настоящему продающий сайт, который будет давать конверсию при должной рекламе - то обращайтесь к нам!</p>
+            <p class="about__left-paragraph">Помимо этого, наш графический дизайнер создаст для вас запоминающийся и красивый фирменный стиль, который выделит вас из массы конкурентов.</p>
           </section>
           <section class="about__right">
-            <div id="carouselExampleInterval" class="carousel slide carousel-fade about__carousel" data-ride="carousel">
+            <div id="carouselExampleInterval" class="carousel slide carousel-fade about__carousel" data-ride="carousel" data-touch="true">
               <ul class="carousel-inner about__right-carousel">
                 <li class="carousel-item active" data-bs-interval="7000">
                   <div class="card about__card">
@@ -196,7 +196,7 @@
         <ul class="about__specialty">
           <li class="about__item">
             <h2 class="about__speciality-title">исследование</h2>
-            <p class="about__speciality-paragraph">Перед тем, как приступить к созданию вашего сайта или фирменного
+            <p class="about__speciality-paragraph">Перед тем как приступить к созданию вашего сайта или фирменного
               стиля, мы проводим глубокий анализ рынка и ваших конкурентов, чтобы сделать ваш бизнес еще более успешным
             </p>
           </li>
@@ -216,7 +216,7 @@
               вашего сайта, чтобы добиться идеальной функциональности на пути пользователя</p>
           </li>
         </ul>
-        <div id="carouselExampleInterval1" class="carousel slide about__specialty-carousel" data-ride="carousel">
+        <div id="carouselExampleInterval1" class="carousel slide about__specialty-carousel" data-ride="carousel" data-touch="true">
           <ul class="carousel-inner about__specialty-carousel-inner">
             <li class="carousel-item active">
               <div class="about__specialty-card">
@@ -266,10 +266,10 @@
           <li class="services__item">
             <h3 class="services__subtitle">доработка</h3>
             <h3 class="services__subtitle">и обслуживание</h3>
-            <h3 class="services__subtitle">существующийх сайтов</h3>
+            <h3 class="services__subtitle">существующих сайтов</h3>
           </li>
           <li class="services__item">
-            <h3 class="services__subtitle">разработка логотипа</h3>
+            <h3 class="services__subtitle">разработка логотипа,</h3>
             <h3 class="services__subtitle">фирменного стиля</h3>
           </li>
         </ul>
@@ -332,11 +332,11 @@
         <h2 class="main__title">примеры работ</h2>
         <section class="work__portfolio">
           <div id="carouselExampleInterval2" class="carousel slide carousel-fade portfolio__carousel"
-            data-bs-ride="false" data-bs-touch="false" data-bs-interval="10000">
+            data-ride="false" data-touch="true">
             <ul class="carousel-inner portfolio__list">
               <li class="carousel-item active portfolio__item">
                 <div class="card portfolio__card">
-                  <p class="portfolio__paragraph">Создание сайта туристического агентства Солнечный тур.<br>
+                  <p class="portfolio__paragraph">Создание сайта туристического агентства МироТур.<br>
                     <br>
                     Цель: сделать современный сайт, который будет давать высокую конверсию при рекламе в интернете.
                   </p><br>
@@ -453,10 +453,8 @@
                   </h2>
                   <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
                     data-parent="#accordionExample">
-                    <p class="card-body">
-                      В создание сайта входит наш первичный маркетинговый анализ разработка структуры сайта, дизайн
-                      сайта и
-                      верстка сайта по дизайн-макету
+                    <p class="card-body questions__paragraph">
+                      В создание сайта входит наш первичный маркетинговый анализ, разработка структуры сайта, дизайн сайта и верстка сайта по дизайн-макету.
                     </p>
                   </div>
                 </li>
@@ -469,8 +467,8 @@
                   </h2>
                   <div id="collapseOne2" class="collapse" aria-labelledby="headingOne"
                     data-parent="#accordionExample">
-                    <p class="card-body">
-                      Дизайн будет согласовываться с вами на всех этапах разработки
+                    <p class="card-body questions__paragraph">
+                      Дизайн будет согласовываться с вами на всех этапах разработки.
                     </p>
                   </div>
                 </li>
@@ -478,13 +476,13 @@
                   <h2 class="card-header" id="headingOne">
                     <button class="accordion-button accordion__button-image collapsed" type="button"
                     data-toggle="collapse" data-target="#collapseOne3">
-                    какие условия оплаты?
+                    Какие условия оплаты?
                     </button>
                   </h2>
                   <div id="collapseOne3" class="collapse" aria-labelledby="headingOne"
                     data-parent="#accordionExample">
-                    <p class="card-body">
-                      Предоплата 50% при заказе и остаток при завершении работ
+                    <p class="card-body questions__paragraph">
+                      Предоплата 50%. Остальное по завершении работ.
                     </p>
                   </div>
                 </li>
@@ -497,8 +495,8 @@
                   </h2>
                   <div id="collapseOne4" class="collapse" aria-labelledby="headingOne"
                     data-parent="#accordionExample">
-                    <p class="card-body">
-                      Продающий сайт создается с учетом текущего состояния рынка и запросов потребителя, и в связи с этим имеет более высокую конверсию
+                    <p class="card-body questions__paragraph">
+                      Продающий сайт создается с учетом текущего состояния рынка и запросов потребителя, и в связи с этим имеет более высокую конверсию.
                     </p>
                   </div>
                 </li>
@@ -511,8 +509,8 @@
                   </h2>
                   <div id="collapseOne5" class="collapse" aria-labelledby="headingOne"
                     data-parent="#accordionExample">
-                    <p class="card-body">
-                      Вам понадобится оплатить домен и ежегодно оплачивать хостинг. Также, если вы захотите заказать продвижение сайта, то у вас будут затраты на рекламу
+                    <p class="card-body questions__paragraph">
+                      Вам понадобится оплатить домен и ежегодно оплачивать хостинг. Также, если вы захотите заказать продвижение сайта, то у вас будут затраты на рекламу.
                     </p>
                   </div>
                 </li>
@@ -525,8 +523,8 @@
                   </h2>
                   <div id="collapseOne6" class="collapse" aria-labelledby="headingOne"
                     data-parent="#accordionExample">
-                    <p class="card-body">
-                      Даем гарантию 3 месяца. В течение этого срока, если на сайте произойдут какие-то неполадки, мы их устраним совершенно бесплатно
+                    <p class="card-body questions__paragraph">
+                      Даем гарантию 3 месяца. В течение этого срока, если на сайте произойдут какие-то неполадки, мы их устраним совершенно бесплатно.
                     </p>
                   </div>
                 </li>
@@ -602,6 +600,10 @@
             <!-- <span class="popup__input-error"></span> -->
           </label>
           <button type="submit" aria-label="отправить" class="popup__button popup__button-save popup__button-create">Отправить</button>
+          <label class="label label__popup">
+            <input type="checkbox" name="checkbox" required>
+            <p>Согласие на <a href="./privacy.html" class="privacy__popup">обработку персональных данных</a></p>
+          </label>
         </form>
       </div>
     </section>

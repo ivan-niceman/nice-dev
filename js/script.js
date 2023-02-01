@@ -38,9 +38,9 @@ function closePopUp(popup) {
     if (evt.target.classList.contains('popup__button-close')) {
       closePopUp(popUp);
     }
-    if (evt.target.classList.contains('popup__button')) {
-      closePopUp(popUp);
-    }
+    // if (evt.target.classList.contains('popup__button')) {
+    //   closePopUp(popUp);
+    // }
   })
 
 // функция закрытия popup кнопкой esc //

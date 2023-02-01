@@ -7,7 +7,7 @@ $(document).ready(function () {
 
     $.ajax({
       type: "POST",
-      url: "send-form-header.php",
+      url: "./php/send-form-header.php",
       data: $(this).serialize(),
     }).done(function () {
       $(".contacts__massage")
@@ -31,7 +31,7 @@ $(document).ready(function () {
 
     $.ajax({
       type: "POST",
-      url: "form-popup.php",
+      url: "./php/form-popup.php",
       data: $(this).serialize(),
     }).done(function () {
       $(".contacts__massage")
@@ -42,6 +42,8 @@ $(document).ready(function () {
       setTimeout(function () {
         jQuery("#form-popup").trigger("reset");
         $(".contacts__massage").removeClass("active-form").fadeOut();
+        $(".popup").removeClass("popup_opened");
+        // $(".popup").removeClass("popup_opened").removeAttr("style");
       }, 2000);
     });
     return false;
