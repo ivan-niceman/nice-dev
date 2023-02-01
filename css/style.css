@@ -31,7 +31,6 @@ a {
 .header {
   position: relative;
   padding: 30px 50px 0;
-  /* min-height: 756px; */
 }
 
 @media (max-width: 1024px) {
@@ -131,6 +130,10 @@ a {
   min-width: 150px;
 }
 
+.mobile-contacts__list {
+  justify-content: space-evenly;
+}
+
 .contacts__link {
   display: block;
   width: 25px;
@@ -149,8 +152,9 @@ a {
 }
 
 .contacts__item:last-child .contacts__link {
-  background: url(../img/icons/mail.png) center no-repeat;
+  background: url(../img/icons/email.svg) center no-repeat;
   background-size: contain;
+  width: 30px;
 }
 
 .navbar-toggler {
@@ -450,8 +454,6 @@ a {
   max-width: 987px;
   height: auto;
   margin: 30px 0 0;
-  /* height: 555px; */
-  /* transform: translateY(38px); */
 }
 
 @media (max-width: 768px) {
@@ -481,7 +483,6 @@ a {
   border: 3px solid #F5F5F5;
   border-radius: 20px;
   padding: 40px 45px;
-  /* margin: 0 auto 20px; */
   margin: 0 auto 40px;
 }
 
@@ -1121,9 +1122,6 @@ a {
   margin: 52px 0;
 }
 
-/* .accordion {
-  --bs-accordion-border-width: 0;
-} */
 .card {
   border: none;
   border-radius: 0;
@@ -1193,10 +1191,7 @@ a {
 }
 
 .accordion-button:not(.collapsed)::after {
-  content: "";
-  background: url(../img/icons/plus.svg) center no-repeat;
   transform: rotate(45deg);
-  transition: .3s;
 }
 
 .card-body {
@@ -1358,7 +1353,7 @@ a {
 }
 
 .footer .contacts__item:last-child .contacts__link {
-  background: url(../img/icons/mail-white.png) center no-repeat;
+  background: url(../img/icons/email-white.svg) center no-repeat;
   background-size: contain;
 }
 
@@ -1394,7 +1389,6 @@ a {
 }
 
 .popup_opened {
-  /* display: flex; */
   visibility: visible;
   opacity: 1;
   cursor: pointer;
@@ -1432,11 +1426,7 @@ a {
 
 @media (max-width: 768px) {
   .popup__button-close {
-    /* top: -36px; */
     right: 0;
-    /* width: 20px;
-    height: 20px;
-    background-size: 20px; */
   }
 }
 
@@ -1528,33 +1518,6 @@ a {
   }
 }
 
-/* .popup__button-inactive {
-  color: #000;
-  background: #fff;
-  border: 1px solid #000;
-  opacity: .2;
-  pointer-events: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-} */
-
-/* .popup__input-error {
-  font-size: 12px;
-  line-height: 15px;
-  color: #FF0000;
-  transition: .3s;
-  opacity: 0;
-  min-height: 30px;
-  padding: 5px 0 0;
-} */
-/* .popup__input-error_active {
-  opacity: 1;
-} */
-/* .popup__input_type_error {
-  border-bottom: 1px solid #FF0000;
-}  */
 .content-form {
   display: none;
   margin: 20px;
