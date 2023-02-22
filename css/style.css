@@ -1376,6 +1376,7 @@ a {
 .nice-dev:hover {
   text-shadow: 0 0 10px #fff;
   color: #FBB42C;
+  text-decoration: none;
 }
 
 .popup {
