@@ -7,7 +7,7 @@ const buttonCloseMobileMenu = document.querySelector('.btn-close');
 
 // функция закрытия мобильного меню //
 
-function closeMobeliMenu(evt, elem) {
+function closeMobileMenu(evt, elem) {
   evt.classList.remove('mobile__menu_visible');
   elem.classList.remove('mobile__menu_visible');
 }
@@ -19,13 +19,13 @@ buttonBurger.addEventListener('click', () => {
 buttonCloseMobileMenu.addEventListener('click', () => {
   // menuMobile.classList.remove('mobile__menu_visible');
   // menuMobileSection.classList.remove('mobile__menu_visible');
-  closeMobeliMenu(menuMobile, menuMobileSection);
+  closeMobileMenu(menuMobile, menuMobileSection);
 })
 
 menuMobileSection.addEventListener('mousedown', evt => {
   if (evt.target === evt.currentTarget) {
     // menuMobile.classList.remove('mobile__menu_visible');
     // menuMobileSection.classList.remove('mobile__menu_visible');
-    closeMobeliMenu(menuMobile, menuMobileSection);
+    closeMobileMenu(menuMobile, menuMobileSection);
   }
 })
