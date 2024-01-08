@@ -974,6 +974,7 @@ a {
 @media (max-width: 425px) {
   .card__size {
     height: 230px;
+    object-fit: contain;
   }
 }
 
